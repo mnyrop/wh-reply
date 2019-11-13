@@ -20,7 +20,7 @@
 
 title: nyuwh reply-for-me
 description: ''
-baseurl: '' # the subpath of your site, e.g. /blog
+baseurl: '/wh-reply' # the subpath of your site, e.g. /blog
 url: '' # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
