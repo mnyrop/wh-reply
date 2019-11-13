@@ -10,7 +10,7 @@ var accessibility = "Please note that NYU is committed to accessibility and adhe
 
 var sshinfo = "When you have been granted access to NYU Hosting, you will receive an email with SSH/FTP credentials (it has the subject line, 'New Account Information'). Accessing the server/backend can be useful if you have to transfer many files over to your server space quickly using an FTP program. You can also access the backend via the cPanel.";
 
-$( document ).ready(function() {
+$(document).ready(function() {
   $("#submit").click(function() {
     $('#txt').empty();
 
@@ -25,4 +25,7 @@ $( document ).ready(function() {
     if ('ssh' in data) { result += sshinfo }
     $('#txt').append(result);
   });
+
+  var copy = new ClipboardJS('.copy-btn');
+  handleTooltip(copy);
 });
